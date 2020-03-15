@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{1E02D903-B14B-48D8-A947-EAAAB82FAA23}</ProjectGuid>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>ManagementSoftware</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+      <NoEntryPoint>false</NoEntryPoint>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <EntryPointSymbol>Main</EntryPointSymbol>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddNewComment.cpp" />
+    <ClCompile Include="AddNewCourse.cpp" />
+    <ClCompile Include="AddNewGrade.cpp" />
+    <ClCompile Include="AddNewRecord.cpp" />
+    <ClCompile Include="AddNewStaff.cpp" />
+    <ClCompile Include="AddStfAssignment.cpp" />
+    <ClCompile Include="ChangeGradePage.cpp" />
+    <ClCompile Include="ChangeRecordPage.cpp" />
+    <ClCompile Include="ChooseRecordOrSupport.cpp" />
+    <ClCompile Include="CrsInfoPage.cpp" />
+    <ClCompile Include="forgotPassword.cpp" />
+    <ClCompile Include="InitAdminDB_PopUp.cpp" />
+    <ClCompile Include="login.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="PublicInfoPage.cpp" />
+    <ClCompile Include="ResetDB.cpp" />
+    <ClCompile Include="ResetPassword.cpp" />
+    <ClCompile Include="AddNewPerson.cpp" />
+    <ClCompile Include="StdInfoPage.cpp" />
+    <ClCompile Include="StfInfoPage.cpp" />
+    <ClCompile Include="StfYearbook.cpp" />
+    <ClCompile Include="TecInfoPage.cpp" />
+    <ClCompile Include="Transcript.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddNewComment.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddNewCourse.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddNewGrade.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddNewRecord.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddNewStaff.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddStfAssignment.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ChangeGradePage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ChangeRecordPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ChooseRecordOrSupport.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CrsInfoPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="forgotPassword.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Reset_Database_External_Tool.h" />
+    <ClInclude Include="InitAdminDB_PopUp.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PublicInfoPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SharedParm.h" />
+    <ClInclude Include="login.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ResetDB.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ResetPassword.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddNewPerson.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StdInfoPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StfInfoPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StfYearbook.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TecInfoPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Transcript.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddNewComment.resx">
+      <DependentUpon>AddNewComment.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewCourse.resx">
+      <DependentUpon>AddNewCourse.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewGrade.resx">
+      <DependentUpon>AddNewGrade.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewRecord.resx">
+      <DependentUpon>AddNewRecord.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewStaff.resx">
+      <DependentUpon>AddNewStaff.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStfAssignment.resx">
+      <DependentUpon>AddStfAssignment.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeGradePage.resx">
+      <DependentUpon>ChangeGradePage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeRecordPage.resx">
+      <DependentUpon>ChangeRecordPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseRecordOrSupport.resx">
+      <DependentUpon>ChooseRecordOrSupport.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrsInfoPage.resx">
+      <DependentUpon>CrsInfoPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotPassword.resx">
+      <DependentUpon>forgotPassword.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitAdminDB_PopUp.resx">
+      <DependentUpon>InitAdminDB_PopUp.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PublicInfoPage.resx">
+      <DependentUpon>PublicInfoPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetDB.resx">
+      <DependentUpon>ResetDB.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewPerson.resx">
+      <DependentUpon>AddNewPerson.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewPerson.zh-CN.resx">
+      <DependentUpon>AddNewPerson.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StdInfoPage.resx">
+      <DependentUpon>StdInfoPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StfInfoPage.resx">
+      <DependentUpon>StfInfoPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StfYearbook.resx">
+      <DependentUpon>StfYearbook.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TecInfoPage.resx">
+      <DependentUpon>TecInfoPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transcript.resx">
+      <DependentUpon>Transcript.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

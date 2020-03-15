@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Login">
+      <UniqueIdentifier>{35190055-966c-4620-8d50-b84209a94a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Student">
+      <UniqueIdentifier>{57aacacc-0dd9-4278-9e9d-e9de985a4ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{34085b7b-13be-46f6-8976-8c67fe1f0a89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SharedPages">
+      <UniqueIdentifier>{6a3c150a-76a2-4735-8ba0-96e85e03b9af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Course">
+      <UniqueIdentifier>{d3e34cea-fb78-4409-b2a5-49520e1b7400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Staff">
+      <UniqueIdentifier>{c850c7c5-c670-43b9-a022-ae4fbbbdc274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Teacher">
+      <UniqueIdentifier>{cde2af23-9171-40ed-972c-d817a3f53c2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="login.cpp">
+      <Filter>Source Files\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="forgotPassword.cpp">
+      <Filter>Source Files\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="InitAdminDB_PopUp.cpp">
+      <Filter>Source Files\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="ResetPassword.cpp">
+      <Filter>Source Files\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ResetDB.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="StdInfoPage.cpp">
+      <Filter>Source Files\Student</Filter>
+    </ClCompile>
+    <ClCompile Include="Transcript.cpp">
+      <Filter>Source Files\Student</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeGradePage.cpp">
+      <Filter>Source Files\Student</Filter>
+    </ClCompile>
+    <ClCompile Include="TecInfoPage.cpp">
+      <Filter>Source Files\Teacher</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNewGrade.cpp">
+      <Filter>Source Files\SharedPages</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNewRecord.cpp">
+      <Filter>Source Files\SharedPages</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeRecordPage.cpp">
+      <Filter>Source Files\SharedPages</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNewCourse.cpp">
+      <Filter>Source Files\SharedPages</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNewPerson.cpp">
+      <Filter>Source Files\SharedPages</Filter>
+    </ClCompile>
+    <ClCompile Include="CrsInfoPage.cpp">
+      <Filter>Source Files\Course</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicInfoPage.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseRecordOrSupport.cpp">
+      <Filter>Source Files\SharedPages</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNewStaff.cpp">
+      <Filter>Source Files\SharedPages</Filter>
+    </ClCompile>
+    <ClCompile Include="StfInfoPage.cpp">
+      <Filter>Source Files\Staff</Filter>
+    </ClCompile>
+    <ClCompile Include="AddStfAssignment.cpp">
+      <Filter>Source Files\Staff</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNewComment.cpp">
+      <Filter>Source Files\SharedPages</Filter>
+    </ClCompile>
+    <ClCompile Include="StfYearbook.cpp">
+      <Filter>Source Files\Staff</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="login.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="forgotPassword.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetPassword.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdInfoPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetDB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedParm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InitAdminDB_PopUp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeGradePage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transcript.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNewGrade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNewRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeRecordPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TecInfoPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNewCourse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNewPerson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CrsInfoPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicInfoPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Reset_Database_External_Tool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChooseRecordOrSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNewStaff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StfInfoPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddStfAssignment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StfYearbook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNewComment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
